@@ -22,14 +22,14 @@ public class UserAuth {
         this.newPassword = "";
     }
 
-    public UserAuth(String username, String password){
+    public UserAuth(@NonNull String username, @NonNull String password){
         this.username = username;
         this.password = password;
         this.newUsername = "";
         this.newPassword = "";
     }
 
-    public UserAuth(String username, String password, String newUsername, String newPassword){
+    public UserAuth(@NonNull String username, @NonNull String password, String newUsername, String newPassword){
         this.username = username;
         this.password = password;
         this.newUsername = newUsername;
@@ -44,11 +44,11 @@ public class UserAuth {
         return password;
     }
 
-    public void setUsername(String username){
+    public void setUsername(@NonNull String username){
         this.username = username;
     }
 
-    public void setPassword(String password){
+    public void setPassword(@NonNull String password){
         this.password = password;
     }
 

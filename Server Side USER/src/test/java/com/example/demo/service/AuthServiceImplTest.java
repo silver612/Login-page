@@ -53,7 +53,7 @@ public class AuthServiceImplTest {
         return newUser;
     }
 
-    private UserAuth giveUserAuth(String username, String password, String newusername, String newpassword) {
+    private UserAuth giveUserAuth(@NonNull String username, @NonNull String password, String newusername, String newpassword) {
         return new UserAuth(username, password, newusername, newpassword);
     }
 
